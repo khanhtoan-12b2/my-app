@@ -19,6 +19,7 @@ const AccountForm = () => {
     return (
       <form>
         <Input value = {myInfos.email}
+         required={true}
          onChange={(e) => setMyInfos({ ...myInfos, email: e.target.value })}
          label="Email" placeholder="Input email" />
         <Input
